@@ -97,14 +97,14 @@ function Auth({ children }) {
       <AuthContext.Provider value={value}>
         <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center gap-4">
           <h2 className="text-2xl font-semibold">
-            Welcome {user.first_name} 👋
+            Welcome {user.last_name} 👋
           </h2>
-          <button
+          {/* <button
             onClick={logout}
             className="bg-red-500 hover:bg-red-600 px-6 py-2 rounded-xl transition"
           >
             Logout
-          </button>
+          </button> */}
           {children}
         </div>
       </AuthContext.Provider>
